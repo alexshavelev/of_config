@@ -22,7 +22,7 @@
 -module(of_config).
 
 %% API
--export([decode/1,test/0
+-export([decode/1,
          encode/1,
          get_version/0]).
 
@@ -34,7 +34,7 @@
 %% API functions
 %%------------------------------------------------------------------------------
 
-test() -> io:format("cool it works ~n", []).
+
 
 -spec decode(xmerl_scan:xmlElement()) -> ok.
 decode(XML) ->
